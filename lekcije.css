@@ -1,0 +1,139 @@
+#prijemni_ispit{
+    
+    width: 100%;
+    border-radius: 0px 0px 250px 0px;
+    background: linear-gradient(0deg, #495B6B 5.42%, #7A8AA3 100%);
+
+    display: flex; /* Postavlja flex kontejner */
+    align-items: center;
+    padding-bottom: 40px;
+
+}
+#prijemni_ispit_spoljni_div{
+}
+#takmicenja{
+    width: 100%;
+    background-image: url("background2.jpg");
+    border-radius: 250px 0px 0px 0px;
+    display: flex; /* Postavlja flex kontejner */
+    align-items: center; 
+        overflow-x: hidden;
+        padding-bottom: 50px;
+}
+#takmicenja_spoljni_div{
+    background: linear-gradient(0deg, #3A4D5D 0%, #495B6B 100%);
+}
+#lekcije{
+    
+    text-align: justify;
+}
+
+#prijemni_ispit_naslov{
+    margin-top: 20px;
+    color: #fcfcfc;
+    text-underline-offset: 8px;
+    text-decoration: underline;
+    text-decoration-color: #FA8E51; // OVA F36E3F a ne #FA8E51
+font-family: Montserrat;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+
+}
+#prijemni_ispit_tekst{
+    
+    flex: 7;
+    height: 100%;
+    margin-left: 15%;
+    margin-right: 4%;
+}
+#prijemni_ispit_icon{
+    flex: 2;
+    height: 100%;
+    
+    margin-right: 15%;
+    
+    display: flex;
+    align-items: center;
+    
+    
+}
+#prijemni_ispit_icon img{
+    width: 100%;
+    padding-top: 75px;
+    height: auto;
+}
+
+#prijemni_ispit_opis{
+    color: #fcfcfc;
+font-family: Montserrat;
+font-size: 200%;
+font-style: normal;
+font-weight: 100;
+line-height: normal;
+}
+
+#takmicenja_tekst{
+    flex: 7;
+    height: 100%;
+    margin-left: 4%; 
+    margin-right: 15%;
+}
+
+#takmicenja_icon{
+    flex: 2;
+    margin-left: 15%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#takmicenja_icon img{
+    width: auto;
+    padding-top: 75px;
+    max-height: 200px;
+}
+#takmicenja_naslov{
+    margin-top: 20px;
+    color: #2A415D;
+    text-decoration: underline;
+    text-decoration-color: #FA8E51;
+    text-underline-offset: 8px;
+font-family: Montserrat;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+#takmicenja_opis{
+      text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+    color: #1b1b1b;
+font-family: Montserrat;
+font-size: 22px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+#takmicenja_icon, #prijemni_ispit_icon{
+      opacity: 0;
+      transition: opacity 1.5s, transform 0.5s;
+    
+}
+    #prijemni_ispit_naslov {
+      opacity: 0;
+      transform: translateX(-100%);
+      transition: opacity 0.5s, transform 0.5s;
+    }
+   #takmicenja_naslov {
+        opacity: 0;
+        transform: translateX(170%);
+      transition: opacity 0.5s, transform 0.5s;
+    }
+    #prijemni_ispit_naslov.prikazi, #takmicenja_naslov.prikazi,#takmicenja_icon.prikazi, #prijemni_ispit_icon.prikazi {
+      opacity: 1;
+      transform: translateX(0);
+      transform: translateY(0);
+    }
+    

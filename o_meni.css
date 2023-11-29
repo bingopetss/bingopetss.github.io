@@ -1,0 +1,81 @@
+#o_meni{
+    width: 100%;
+    background: linear-gradient(180deg, #495B6B 35.42%, #7A8AA3 100%);
+    position: relative;
+    padding-bottom: 60px;
+    text-align: justify;
+    overflow: hidden;
+}
+#o_meni_naslov{
+    margin-top: 20px;
+    color: #fcfcfc;
+    text-decoration: underline;
+    text-decoration-color: #FA8E51;
+    text-underline-offset: 8px;
+font-family: Montserrat;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-left: 15%;
+margin-top: 40px;
+margin-bottom: 20px;
+position: relative;
+}
+#o_meni_content {
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#o_meni_1{
+    color: #fcfcfc;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+font-family: Montserrat;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+width: 47%;
+margin-left: 15%;
+padding-bottom: 20px;
+}
+
+#o_meni_slika{
+    width: 21%;
+    margin-right: 15%;
+    display: flex;
+    background-image: url("ikonice_final/ilija.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#o_meni_slika_druga{
+    height: 1000px;
+    width: 50%;
+    background-image: url("ikonice_final/ilija.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+    margin: 0 auto;
+}
+
+#o_meni_naslov {
+        opacity: 0;
+      transition: opacity 0.5s, transform 0.5s;
+      transform: translateX(-100%);
+    }
+    #o_meni_naslov.prikazi{
+      opacity: 1;
+      transform: translateX(0);
+    }
+    
+    #o_meni_slika, #o_meni_slika_druga {
+        opacity: 0;
+      transition: opacity 1.5s, transform 0.5s;
+    }
+    #o_meni_slika.prikazi, #o_meni_slika_druga.prikazi{
+      opacity: 1;
+      transform: translateX(0);
+    }
