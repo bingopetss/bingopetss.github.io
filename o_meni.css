@@ -2,12 +2,11 @@
     width: 100%;
     background: linear-gradient(180deg, #495B6B 35.42%, #7A8AA3 100%);
     position: relative;
-    padding-bottom: 60px;
+    padding-bottom: 20px;
     text-align: justify;
     overflow: hidden;
 }
 #o_meni_naslov{
-    margin-top: 20px;
     color: #fcfcfc;
     text-decoration: underline;
     text-decoration-color: #FA8E51;
@@ -18,8 +17,8 @@ font-style: normal;
 font-weight: 700;
 line-height: normal;
 margin-left: 15%;
-margin-top: 40px;
-margin-bottom: 20px;
+margin-top: 20px;
+margin-bottom: 10px;
 position: relative;
 }
 #o_meni_content {
@@ -30,15 +29,23 @@ position: relative;
 }
 #o_meni_1{
     color: #fcfcfc;
-    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
-font-family: Montserrat;
+font-family: "Poppins", sans-serif;
+font-size: 100%;
+background: white;
+color: #333333;
+padding: 10px;
+border-radius: 15px;
 font-size: 20px;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
 width: 47%;
 margin-left: 15%;
-padding-bottom: 20px;
+padding-bottom: 0px;
+padding: 20px;
+padding-left: 25px;
+padding-right: 25px;
+border-radius: 55px 0 55px 0;
 }
 
 #o_meni_slika{
@@ -51,7 +58,6 @@ padding-bottom: 20px;
     background-position: center center;
 }
 #o_meni_slika_druga{
-    height: 1000px;
     width: 50%;
     background-image: url("ikonice_final/ilija.png");
     background-size: 100% auto;

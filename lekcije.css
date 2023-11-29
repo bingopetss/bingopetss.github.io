@@ -1,24 +1,49 @@
+#prijemni_ispiti_background{
+    
+    border-radius: 0px 0px 250px 0px;
+    background: linear-gradient(0deg, #495B6B 5.42%, #7A8AA3 100%);
+}
 #prijemni_ispit{
     
     width: 100%;
-    border-radius: 0px 0px 250px 0px;
-    background: linear-gradient(0deg, #495B6B 5.42%, #7A8AA3 100%);
 
     display: flex; /* Postavlja flex kontejner */
     align-items: center;
     padding-bottom: 40px;
 
 }
+#prijemni_ispit_icon_druga{
+    
+    width: 50%;
+    margin: 0 auto;
+}
+#prijemni_ispit_icon_druga img{
+    display: flex;
+    margin: auto auto;
+    padding-bottom: 40px;
+}
+#takmicenja_icon_druga img{
+    display:flex;
+    margin: auto auto;
+    padding-bottom: 40px;
+}
+#takmicenja_icon_druga{
+    width: 50%;
+    margin: 0 auto;
+}
 #prijemni_ispit_spoljni_div{
+}
+#takmicenja_background{
+    
+    border-radius: 250px 0px 0px 0px;
+    background-image: url("background2.jpg");
 }
 #takmicenja{
     width: 100%;
-    background-image: url("background2.jpg");
-    border-radius: 250px 0px 0px 0px;
     display: flex; /* Postavlja flex kontejner */
     align-items: center; 
         overflow-x: hidden;
-        padding-bottom: 50px;
+        padding-bottom: 40px;
 }
 #takmicenja_spoljni_div{
     background: linear-gradient(0deg, #3A4D5D 0%, #495B6B 100%);
@@ -29,11 +54,12 @@
 }
 
 #prijemni_ispit_naslov{
-    margin-top: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     color: #fcfcfc;
     text-underline-offset: 8px;
     text-decoration: underline;
-    text-decoration-color: #FA8E51; // OVA F36E3F a ne #FA8E51
+    text-decoration-color: #FA8E51;
 font-family: Montserrat;
 font-size: 40px;
 font-style: normal;
@@ -68,7 +94,14 @@ line-height: normal;
 #prijemni_ispit_opis{
     color: #fcfcfc;
 font-family: Montserrat;
-font-size: 200%;
+    font-family: "Poppins", sans-serif;
+font-size: 100%;
+background: white;
+color: #333333;
+padding: 20px;
+padding-left: 25px;
+padding-right: 25px;
+border-radius: 0 55px 0 55px;
 font-style: normal;
 font-weight: 100;
 line-height: normal;
@@ -96,7 +129,8 @@ line-height: normal;
     max-height: 200px;
 }
 #takmicenja_naslov{
-    margin-top: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     color: #2A415D;
     text-decoration: underline;
     text-decoration-color: #FA8E51;
@@ -108,12 +142,18 @@ font-weight: 700;
 line-height: normal;
 }
 #takmicenja_opis{
-      text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
     color: #1b1b1b;
+    background: white;
+    padding: 20px;
+border-radius: 55px 0 55px 0;
 font-family: Montserrat;
-font-size: 22px;
+    font-family: "Poppins", sans-serif;
+font-size: 52px;
 font-style: normal;
-font-weight: 500;
+font-weight: 200;
+padding: 20px;
+padding-left: 25px;
+padding-right: 25px;
 line-height: normal;
 }
 #takmicenja_icon, #prijemni_ispit_icon{

@@ -73,6 +73,9 @@ function azurirajOdnosSirineIVisine() {
                 // Prikazi button5
                 document.getElementById("button5").style.display = "block";
                 
+//                var sirina = window.innerWidth;
+//                document.getElementById("takmicenja_naslov").innerText = sirina;
+                
                 var overlayContainers = document.querySelectorAll(".overlay-container");
 
                 
@@ -114,21 +117,48 @@ function azurirajOdnosSirineIVisine() {
                 
                 var overlayContainers = document.querySelectorAll(".overlay-container");
                 
+                var o_meni_slika_druga = document.getElementById("o_meni_slika_druga");
+                o_meni_slika_druga.style.display = "block";
                 document.getElementById("platforma").style.fontWeight = 400;
                 document.getElementById("platforma").style.fontSize = "36px";
                 
+                document.getElementById("prijemni_ispit_icon").style.display = "none";
+                document.getElementById("prijemni_ispit_icon_druga").style.display = "block";
+                document.getElementById("takmicenja_icon").style.display = "none";
+                document.getElementById("takmicenja_icon_druga").style.display = "block";
+                
                 document.getElementById("prijemni_ispit_tekst").style.marginLeft = "5%";
+                document.getElementById("prijemni_ispit_tekst").style.marginRight = "5%";
+                document.getElementById("prijemni_ispit_tekst").style.width = "90%";
                 document.getElementById("prijemni_ispit_icon").style.marginRight = "5%";
-                document.getElementById("prijemni_ispit_opis").style.fontSize = "32px";
-                document.getElementById("prijemni_ispit_opis").style.fontWeight = "250";
+                document.getElementById("prijemni_ispit_opis").style.fontSize = "260%";
+                document.getElementById("prijemni_ispit_opis").style.fontWeight = "normal";
                 
                 document.getElementById("takmicenja_icon").style.marginLeft = "5%";
-                document.getElementById("takmicenja_opis").style.fontSize = "32px";
-                document.getElementById("takmicenja_opis").style.fontWeight = "500";
+                
+                
+                document.getElementById("takmicenja_naslov").style.textAlign = "right";
+                document.getElementById("takmicenja_naslov").style.fontSize = "400%";
+                document.getElementById("prijemni_ispit_naslov").style.fontSize = "400%";
+                document.getElementById("o_meni_naslov").style.fontSize = "400%";
+                document.getElementById("prijemni_ispit_naslov").style.paddingBottom = "15px";
+                document.getElementById("prijemni_ispit_naslov").style.paddingTop = "15px";
+                document.getElementById("takmicenja_naslov").style.paddingBottom = "15px";
+                document.getElementById("takmicenja_naslov").style.paddingTop = "15px";
+                document.getElementById("o_meni_naslov").style.paddingBottom = "15px";
+                document.getElementById("o_meni_naslov").style.paddingTop = "15px";
+                document.getElementById("privatni_casovi_naslov").style.paddingTop = "15px";
+                document.getElementById("privatni_casovi_naslov").style.paddingBottom = "15px";
+                document.getElementById("privatni_casovi_naslov").style.fontSize = "400%";
+                
+                document.getElementById("takmicenja_tekst").style.width = "90%";
+                document.getElementById("takmicenja_tekst").style.marginLeft = "5%";
+                document.getElementById("takmicenja_opis").style.fontSize = "260%";
+                document.getElementById("takmicenja_opis").style.fontWeight = "normal";
                 document.getElementById("takmicenja_tekst").style.marginRight = "5%";
                 
                 
-                document.getElementById("o_meni_1").style.fontWeight = "300";
+                document.getElementById("o_meni_1").style.fontWeight = "normal";
                 document.getElementById("o_meni_1").style.marginLeft = "5%";
                 document.getElementById("o_meni_1").style.width = "57%";
                 document.getElementById("o_meni_slika").style.marginRight = "5%";
@@ -138,16 +168,19 @@ function azurirajOdnosSirineIVisine() {
                 var o_meni_slika = document.getElementById("o_meni_slika");
                 o_meni_slika_width = o_meni_slika.offsetWidth;
                 o_meni_slika.style.height = o_meni_slika_width * 2369 / 1669 + "px";
-                var o_meni_slika_druga = document.getElementById("o_meni_slika_druga");
                 o_meni_slika_druga.style.width = "50%";
                 o_meni_slika_druga.style.margin = "0 auto";
                 o_meni_slika_druga_width = o_meni_slika_druga.offsetWidth;
                 o_meni_slika_druga.style.height = o_meni_slika_druga_width * 2369 / 1669 + "px";
                 
-                o_meni_slika.style.display = "none";
                 o_meni_slika_druga.style.display = "block";
+                o_meni_slika.style.display = "none";
+                document.getElementById("o_meni").style.height = "auto";
                 document.getElementById("o_meni_1").style.width = "90%";
-                document.getElementById("o_meni_1").style.fontSize = "100%";
+                document.getElementById("o_meni_1").style.marginRight = "5%";
+                document.getElementById("o_meni_1").style.marginLeft = "5%";
+                document.getElementById("o_meni_1").style.fontSize = "140%";
+                document.getElementById("o_meni_1").style.color = "#1b1b1b";
                 
                 
                 document.getElementById("privatni_casovi_naslov").style.marginLeft = "5%";
@@ -156,9 +189,17 @@ function azurirajOdnosSirineIVisine() {
                 document.getElementById("privatni_casovi_tekst1").style.marginRight = "5%";
                 
                 
-                document.getElementById("privatni_casovi_p1").style.fontSize = "22px";
-                document.getElementById("privatni_casovi_p2").style.fontSize = "22px";
-                document.getElementById("privatni_casovi_p3").style.fontSize = "30px";
+                //document.getElementById("privatni_casovi_p1").style.fontSize = "130%";
+                document.getElementById("privatni_casovi_p2").style.fontSize = "150%";
+                document.getElementById("privatni_casovi_p3").style.fontSize = "150%";
+                
+                
+                document.getElementById("logo_again").style.marginLeft = "5%";
+                document.getElementById("contact_info").style.marginRight = "5%";
+                
+                //document.getElementById("privatni_casovi_p1").style.marginTop = "15px";
+                document.getElementById("privatni_casovi_p2").style.marginTop = "15px";
+                document.getElementById("privatni_casovi_p3").style.marginTop = "15px";
                
                 
                 overlayContainers.forEach(function(container) {
@@ -222,6 +263,27 @@ function azurirajOdnosSirineIVisine() {
                 document.getElementById("platforma").style.fontWeight = 500;
                 document.getElementById("platforma").style.fontSize = "30px";
                 
+                
+                document.getElementById("prijemni_ispit_icon").style.display = "block";
+                document.getElementById("prijemni_ispit_icon_druga").style.display = "none";
+                document.getElementById("takmicenja_icon").style.display = "block";
+                document.getElementById("takmicenja_icon_druga").style.display = "none";
+                
+                document.getElementById("takmicenja_naslov").style.textAlign = "left";
+                document.getElementById("takmicenja_naslov").style.fontSize = "300%";
+                document.getElementById("prijemni_ispit_naslov").style.fontSize = "300%";
+                document.getElementById("o_meni_naslov").style.fontSize = "300%";
+                document.getElementById("prijemni_ispit_naslov").style.paddingBottom = "15px";
+                document.getElementById("prijemni_ispit_naslov").style.paddingTop = "15px";
+                document.getElementById("takmicenja_naslov").style.paddingBottom = "15px";
+                document.getElementById("takmicenja_naslov").style.paddingTop = "15px";
+                document.getElementById("o_meni_naslov").style.paddingBottom = "15px";
+                document.getElementById("o_meni_naslov").style.paddingTop = "15px";
+                document.getElementById("privatni_casovi_naslov").style.paddingTop = "15px";
+                document.getElementById("privatni_casovi_naslov").style.paddingBottom = "15px";
+                document.getElementById("privatni_casovi_naslov").style.fontSize = "300%";
+                
+                
                 document.getElementById("prijemni_ispit_tekst").style.marginLeft = "15%";
                 document.getElementById("prijemni_ispit_opis").style.fontSize = "100%";
                 document.getElementById("prijemni_ispit_opis").style.fontWeight = "400";
@@ -232,19 +294,24 @@ function azurirajOdnosSirineIVisine() {
                 document.getElementById("takmicenja_opis").style.fontWeight = "400";
                 document.getElementById("takmicenja_tekst").style.marginRight = "15%";
                 
+                
                 document.getElementById("o_meni_1").style.fontSize = "100%";
                 document.getElementById("o_meni_1").style.fontWeight = "400";
                 document.getElementById("o_meni_1").style.marginLeft = "15%";
-                document.getElementById("o_meni_1").style.width = "47%";
+                document.getElementById("o_meni_1").style.width = "53%";
                 document.getElementById("o_meni_slika").style.display = "block";
                 document.getElementById("o_meni_slika").style.marginRight = "15%";
-                document.getElementById("o_meni_slika").style.width = "21%";
+                document.getElementById("o_meni_slika").style.width = "15%";
                 document.getElementById("o_meni_slika").style.marginLeft = "2%";
                 document.getElementById("o_meni_naslov").style.marginLeft = "15%";
                 
                 var o_meni_slika = document.getElementById("o_meni_slika");
                 o_meni_slika_width = o_meni_slika.offsetWidth;
                 o_meni_slika.style.height = o_meni_slika_width * 2369 / 1669 + "px";
+                if (o_meni_slika_width * 2369 / 1669 > document.getElementById("o_meni_1").offsetHeight){
+                    o_meni_slika.style.height = document.getElementById("o_meni_1").offsetHeight + "px";
+                    o_meni_slika.style.width = o_meni_slika.offsetHeight * 1669 / 2369 + "px";
+                }
                 var o_meni_slika_druga = document.getElementById("o_meni_slika_druga");
                 o_meni_slika_druga.style.width = "50%";
                 o_meni_slika_druga.style.margin = "0 auto";
@@ -261,9 +328,14 @@ function azurirajOdnosSirineIVisine() {
                 document.getElementById("privatni_casovi_tekst1").style.marginRight = "15%";
                 
                 
-                document.getElementById("privatni_casovi_p1").style.fontSize = "18px";
+                document.getElementById("logo_again").style.marginLeft = "15%";
+                document.getElementById("contact_info").style.marginRight = "15%";
+                //document.getElementById("privatni_casovi_p1").style.fontSize = "18px";
                 document.getElementById("privatni_casovi_p2").style.fontSize = "18px";
                 document.getElementById("privatni_casovi_p3").style.fontSize = "18px";
+                //document.getElementById("privatni_casovi_p1").style.marginTop = "15px";
+                document.getElementById("privatni_casovi_p2").style.marginTop = "15px";
+                document.getElementById("privatni_casovi_p3").style.marginTop = "15px";
                 
                 
                 var overlayContainers = document.querySelectorAll(".overlay-container");
@@ -276,6 +348,8 @@ function azurirajOdnosSirineIVisine() {
                     }
                     container.style.height =  containterHeight + "px";
                 });
+//                var sirina = window.innerWidth;
+//                document.getElementById("takmicenja_naslov").innerText = sirina;
             }
         }
 
