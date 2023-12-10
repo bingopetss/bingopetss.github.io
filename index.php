@@ -32,6 +32,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
         <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>
     </div>
+    <div id="layer1" class="layer"></div>
+    <div id="layer2" class="layer"></div>
+    <div id="layer3" class="layer"></div>
+    <div id="layer"></div>
 <div class="text-box">
     <h3><i>Рачунај на успех!</i></h3>
     <h1>Мрежа младих инжењера</h1>
@@ -343,6 +347,41 @@ $(document).ready(function() {
         });
     });
 });
+let currentLayer = 0;
+var images = document.querySelectorAll(".layer");
+var currentIndex = images.length -2;
+images[0].style.opacity = 0;
+images[1].style.opacity = 1;
+images[2].style.opacity = 0;
+var pocetak = true;
+
+function changeLayer() {
+    const layers = document.querySelectorAll('.layer');
+
+    layers.forEach(layer => {
+        layer.style.opacity = '0';
+        layer.style.transform = 'scale(1)';
+        layer.style.transition = 'opacity 2s, transform 20s';
+    });
+
+    layers[currentLayer].style.opacity = '1';
+    layers[currentLayer].style.transform = 'scale(1.25)';
+
+    currentLayer++;
+
+    if (currentLayer >= layers.length) {
+        currentLayer = 0;
+    }
+    if(pocetak){
+        pocetak = false;
+        setTimeout(changeLayer, 0);
+    }else{
+        setTimeout(changeLayer, 5000);
+    }
+    
+}
+    setTimeout(changeLayer, 0);
+
 
 </script>
 </body>
