@@ -125,7 +125,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
 </div>
 <section class="testimonials">
         <h1>Зашто баш ми?</h1>
-    <div class="row">
+    <div class="row"  style="margin-top: 0px;">
         <div class="testimonials-col">
             <div>
                 <h3>Искуство у држању наставе  <i class="fa fa-check-circle" aria-hidden="true"></i></h3>
@@ -144,7 +144,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
         </div>
         
     </div>
-    <div class="row"  style="margin-top: 10px;">
+    <div class="row" style="margin-top: 0px">
         <div class="testimonials-col">
             <div>
                 <h3>Персонализована настава <i class="fa fa-check-circle" aria-hidden="true"></i></h3>
@@ -192,9 +192,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
     </div>
 </section>
 </div>
-<section class="testimonials">
+<section class="testimonials" style="padding-bottom: 0px;">
         <h1>Шта наши ученици кажу о нама?</h1>
-    <div class="row">
+    <div class="row" style="margin-top: 0px;">
         <div class="testimonials-col">
             <div>
                 <h3>Милица Петровић</h3>
@@ -232,9 +232,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
 </section>    
 <div class="campus_div" style="background: #04091e">
 <section id="about" class="campus" style="padding-bottom: 0px;">
-    <h1>Контакт</h1>
+    <h1 style="color:#f24134;">Контакт</h1>
     
-    <div class="row">
+    <div class="row"  style="margin-top: -10px;">
         <div class="campus-col" style="overflow: visible;">
             <table style="color: #fff; text-align: left;">
                 <tr>
@@ -256,7 +256,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
         </div>
     </div>
     <hr>
-    <div style="padding-top: 15px;padding-bottom: 15px; color: white;">
+    <div class ="footer">
         Мрежа младих инжењера 2023 &nbsp;&nbsp;&nbsp;&nbsp;
         <i class="fab fa-facebook"></i>&nbsp;
         <i class="fab fa-instagram"></i>
@@ -316,14 +316,12 @@ $(document).ready(function() {
     });
     $("#contact_us_button").click(function(event) {
         event.preventDefault();
-        var target = $("#contact");
-        var targetHeight = target.offset().top - 40;
+        var targetHeight = $(document).height() - $(window).height();
         $("html, body").animate({ scrollTop: targetHeight }, 1000);
     });
     $("#contact_button").click(function(event) {
         event.preventDefault();
-        var target = $("#contact");
-        var targetHeight = target.offset().top - 40;
+        var targetHeight = $(document).height() - $(window).height();
         $("html, body").animate({ scrollTop: targetHeight }, 1000);
     });
 });

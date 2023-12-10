@@ -167,7 +167,7 @@ p{
     flex-basis: 31%;
     background: #fff3f3;
     border-radius: 10px;
-    margin-bottom: 1%;
+    margin-bottom: 2%;
     padding: 20px 12px;
     box-sizing: border-box;
     transition: 0.5s;
@@ -211,6 +211,11 @@ h3{
     margin-bottom: 15px;
     text-align: center;
 }
+@media(max-width: 700px){
+    .facilities-col{
+        margin-top: 5%;
+    }
+}
 .testimonials{
     width: 80%;
     margin: auto;
@@ -219,6 +224,7 @@ h3{
     text-align: center;
 }
 .testimonials-col{
+    margin-top: 25px;
     flex-basis: 44%;
     border-radius: 10px;
     text-align: center;
@@ -226,10 +232,6 @@ h3{
     padding: 15px;
     cursor: pointer;
     display: flex;
-}
-.testimonials-col p{
-    margin-left: 5%;
-    margin-right: 5%;
 }
 .testimonials-col img{
     height: 40px;
@@ -287,7 +289,7 @@ h3{
     transition: 1.5s ease;
 }
 .cta{
-    margin: 100px auto;
+    margin: 50px auto;
     width: 80%;
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(images/banner2.jpg);
     background-position: center;
@@ -300,6 +302,8 @@ h3{
     color: #fff;
     margin-bottom: 40px;
     padding: 0;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 @media(max-width: 700px){
     .cta h1{
@@ -311,6 +315,17 @@ td{
 }
 @media(max-width: 700px){
     td{
+        font-size: 12px;
+    }
+}
+.footer{
+    padding-top: 15px;
+    padding-bottom: 15px; 
+    color: white;
+    font-size: 16px;
+}
+@media(max-width: 700px){
+    .footer{
         font-size: 12px;
     }
 }
